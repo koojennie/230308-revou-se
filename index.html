@@ -28,97 +28,115 @@
     <body>
         <!-- header /navbar -->
         <header style="background-color: aqua">
-        <div class="container">
-            <nav class="navbar">
-                <img
-                  src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png"
-                  class="logo"
-                  width="40"
-                  height="40"
-                />
-
-                <div class="home">Home</div>
-                <a href="/profile.html" class="search">Profile</a>
-                <div class="logout">About</div>
-            </nav>
-        </div>
-    </header>
-
-    <!-- content -->
-    <main>
-        <!-- hero -->
-        <section id="hero">
             <div class="container">
-                <div class="hero">
-                    <h1 class="hero-title">Hi Jennie, Welcome to Homepage</h1>
-                    <p class="hero-subtitle">Ini Website Latihan Pertama</p>
-                    <div class="slider">
-                        <img
-                            class="img-slideshow"
-                            src="https://source.unsplash.com/random/1080x400?landscape&sig=1"
-                        />
-                        <img
-                            class="img-slideshow"
-                            src="https://source.unsplash.com/random/1080x400?landscape&sig=2"
-                        />
-                        <img
-                            class="img-slideshow"
-                            src="https://source.unsplash.com/random/1080x400?landscape&sig=3"
-                        />
-                        <button onclick="plusDivs(-1)">Previuos</button>
-                        <button onclick="plusDivs(1)">Next</button>
+                <nav class="navbar">
+                    <img
+                    src="https://storage.googleapis.com/danacita-website-v3-prd/website_v3/images/Revou-alasan.original.png"
+                    class="logo"
+                    width="40"
+                    height="40"
+                    />
+
+                    <div class="home">Home</div>
+                    <a href="/profile.html" class="search">Profile</a>
+                    <div class="logout">About</div>
+                </nav>
+            </div>
+        </header>
+
+        <!-- content -->
+        <main>
+            <!-- hero -->
+            <section id="hero">
+                <div class="container">
+                    <div class="hero">
+                        <h1 class="hero-title">Hi Jennie, Welcome to Homepage</h1>
+                        <p class="hero-subtitle">Ini Website Latihan Pertama</p>
+                        <div class="slider">
+                            <img
+                                class="img-slideshow"
+                                src="https://source.unsplash.com/random/1080x400?landscape&sig=1"
+                            />
+                            <img
+                                class="img-slideshow"
+                                src="https://source.unsplash.com/random/1080x400?landscape&sig=2"
+                            />
+                            <img
+                                class="img-slideshow"
+                                src="https://source.unsplash.com/random/1080x400?landscape&sig=3"
+                            />
+                            <button onclick="plusDivs(-1)">Previuos</button>
+                            <button onclick="plusDivs(1)">Next</button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <hr class="hero-line"/>
-        </section>
+                <hr class="hero-line"/>
+            </section>
 
-        <section id="headquarter">
-        </section>
-        <section id="message-us">
-            <div class="container">
-                <div class="form-section">
-                    <form name="message-form" onsubmit="return validateForm()">
-                        Nama: <input placeholder="Nama" type="text" name="full-name" required/>
-                        <br />
-
-                        Tanggal Lahir: <input type="date" name="birth-date" />
-                        <br />
-
-                        Jenis Kelamin Aku: 
-                        <input type="radio" id="male" name="gender" value="Laki-laki"/>
-                        <label for="name">Laki-laki</label>
-                        <input type="radio" id="female" name="gender" value="Perempuan"/>
-                        <label for="name">Perempuan</label>
-                        <br />
-
-                        Pesan:
-                        <textarea placeholder="Pesan" name="messages"></textarea>
-                        <br />
-
-                        <input type="submit" value="Submit"/>
-                    </form>
-
-                    <div class="form-output">
-                        <p>Nama: <span id="sender-full-name"></span></p>
-                        <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
-                        <p>Jenis Kelamin: <span id="sender-gender"></span></p>
-                        <p>Pesan: <span id="sender-messages"></span></p>
+            <section id="headquarter">
+                <div class="head">
+                    <h1 class="headquarter-title">Our Headquarter</h1>
+                    <div class="headquarter-gallery">
+                    <div class="city">
+                        <img src="http://placekitten.com/200/200" alt="" />
+                        <h3>City 1</h3>
+                    </div>
+                    <div class="city">
+                        <img src="http://placekitten.com/200/200" alt="" />
+                        <h3>City 1</h3>
+                    </div>
+                    <div class="city">
+                        <img src="http://placekitten.com/200/200" alt="" />
+                        <h3>City 1</h3>
+                    </div>
                     </div>
                 </div>
-            </div>
-        </section>
-    </main>
+                </div>
+            </section>
+            <section id="message-us">
+                <div class="container">
+                    <div class="form-section">
+                        <form name="message-form" onsubmit="return validateForm()">
+                            Nama: <input placeholder="Nama" type="text" name="full-name" required/>
+                            <br />
+
+                            Tanggal Lahir: <input type="date" name="birth-date" />
+                            <br />
+
+                            Jenis Kelamin Aku: 
+                            <input type="radio" id="male" name="gender" value="Laki-laki"/>
+                            <label for="name">Laki-laki</label>
+                            <input type="radio" id="female" name="gender" value="Perempuan"/>
+                            <label for="name">Perempuan</label>
+                            <br />
+
+                            Pesan:
+                            <textarea placeholder="Pesan" name="messages"></textarea>
+                            <br />
+
+                            <input type="submit" value="Submit"/>
+                        </form>
+
+                        <div class="form-output">
+                            <p>Nama: <span id="sender-full-name"></span></p>
+                            <p>Tanggal Lahir: <span id="sender-birth-date"></span></p>
+                            <p>Jenis Kelamin: <span id="sender-gender"></span></p>
+                            <p>Pesan: <span id="sender-messages"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
     <!-- footer -->
-    <footer>
-        <div class="container">
-            <div class="footer">
-                <p>Copyright Alia</p>
-                <p class="footer-paragraf">Revou</p>
+        <footer>
+            <div class="container">
+                <div class="footer">
+                    <p>Copyright Jennie</p>
+                    <p class="footer-paragraf">Revou</p>
+                </div>
             </div>
-        </div>
-    </footer>
+        </footer>
     </body>
     <script>
         // js kita, javascript ga keliatan dibrowser. js ad di inspect element
